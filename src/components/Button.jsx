@@ -3,7 +3,7 @@ export function ButtonIcon(props) {
     <>
       <button className="inline-block rounded bg-rosa-medio font-bold border-b-4 border-rosa-escuro w-auto px-8 py-3 text-lg text-white transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden ">
         <div className="flex items-center gap-2">
-          <img src={props.svg}></img>
+          <img src={props.svg} alt={props.alt} />
           {props.text}
         </div>
       </button>
