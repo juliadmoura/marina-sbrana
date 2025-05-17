@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="bg-rosa-claro text-rosa-escuro">
+    <header className="bg-rosa-claro text-rosa-escuro drop-shadow-header">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
@@ -28,28 +28,28 @@ function Header() {
             <nav aria-label="Global">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <a className="text-2xl" href="#">
+                  <a className="text-2xl font-bold" href="#">
                     {' '}
                     Quem sou{' '}
                   </a>
                 </li>
 
                 <li>
-                  <a className="text-2xl" href="#">
+                  <a className="text-2xl font-bold" href="#">
                     {' '}
                     Procedimentos{' '}
                   </a>
                 </li>
 
                 <li>
-                  <a className="text-2xl" href="#">
+                  <a className="text-2xl font-bold" href="#">
                     {' '}
                     Antes e Depois{' '}
                   </a>
                 </li>
 
                 <li>
-                  <a className="text-2xl" href="#">
+                  <a className="text-2xl font-bold" href="#">
                     {' '}
                     Reviews{' '}
                   </a>

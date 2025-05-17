@@ -3,8 +3,19 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      dropShadow: {
+        header: [
+          '0 4px 3px rgb(214 91 110 / 0.03)',
+          '0 2px 2px rgb(214 91 110 / 0.02)',
+        ],
+      },
+
       width: {
         262: '262px',
+        90: '90px',
+      },
+      fontSize: {
+        40: '2.5rem',
       },
     },
     colors: {
