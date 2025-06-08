@@ -14,7 +14,7 @@ export function ButtonIcon(props) {
 export function ButtonOutlined(props) {
   return (
     <>
-      <button className="inline-block rounded font-bold bg-white border border-rosa-escuro w-262 px-8 py-3 text-lg text-rosa-escuro transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden ">
+      <button className="inline-block rounded font-bold bg-white border border-rosa-escuro w-206 px-4 py-3 text-lg text-rosa-escuro transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden">
         {props.text}
       </button>
     </>
