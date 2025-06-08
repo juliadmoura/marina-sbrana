@@ -70,7 +70,9 @@ module.exports = {
     colors: {
       'rosa-claro': '#FFE2E4',
       'rosa-medio': '#EC7684',
+      'rosa-medio-70': '#EC7684B3',
       'rosa-escuro': '#D6586E',
+      'rosa-escuro-20': '#D6586E33',
       preto: '#1A1A1A',
       white: '#FFFFFF',
     },
