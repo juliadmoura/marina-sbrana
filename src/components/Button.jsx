@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 export function ButtonIcon(props) {
   return (
     <>
@@ -23,16 +21,17 @@ export function ButtonOutlined(props) {
   );
 }
 
-export function ButtonProcedure(props) {
-  const [showText, setShowText] = useState(false);
-  const [isActive, setIsActive] = useState(false);
+export function ButtonProcedure({ id, svg, text, alt, isActive, onClick }) {
   const handleClick = () => {
-    setShowText((prev) => !prev);
-    setIsActive((prev) => !prev);
+    if (onClick) {
+      onClick(id);
+    }
   };
+
   return (
     <>
       <button
+        id={id}
         onClick={handleClick}
         className={`inline-block rounded-full ${
           isActive ? 'bg-rosa-medio' : 'bg-rosa-medio-70'
@@ -41,17 +40,17 @@ export function ButtonProcedure(props) {
         } w-auto px-6 py-3 text-lg text-white ease-in-out transition-all duration-500`}
       >
         <div className="flex items-center gap-2">
-          <img src={props.svg} alt={props.alt} />
-          {showText && (
+          <img src={svg} alt={alt} />
+          {isActive && (
             <span
               className={`transition-all duration-500 ease-in-out text-2xl ${
-                showText
+                isActive
                   ? 'opacity-100 scale-100 ml-2 max-w-xs'
                   : 'opacity-0 scale-90 ml-0 max-w-0'
               }
               whitespace-nowrap overflow-hidden`}
             >
-              {props.text}
+              {text}
             </span>
           )}
         </div>
